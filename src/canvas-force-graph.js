@@ -99,6 +99,7 @@ export default Kapsule({
   methods: {
     // Expose d3 forces for external manipulation
     d3Force: function(state, forceName, forceFn) {
+      console.log('Called d3Force ,,,,')
       if (forceFn === undefined) {
         return state.forceLayout.force(forceName); // Force getter
       }
