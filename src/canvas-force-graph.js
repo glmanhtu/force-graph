@@ -82,7 +82,6 @@ export default Kapsule({
     linkDirectionalParticleColor: { triggerUpdate: false },
     globalScale: { default: 1, triggerUpdate: false },
     d3AlphaMin: { default: 0, triggerUpdate: false},
-    d3Alpha: { default: 1, triggerUpdate: false},
     d3AlphaDecay: { default: 0.0228, triggerUpdate: false, onChange(alphaDecay, state) { state.forceLayout.alphaDecay(alphaDecay) }},
     d3AlphaTarget: { default: 0, triggerUpdate: false, onChange(alphaTarget, state) { state.forceLayout.alphaTarget(alphaTarget) }},
     d3VelocityDecay: { default: 0.4, triggerUpdate: false, onChange(velocityDecay, state) { state.forceLayout.velocityDecay(velocityDecay) } },
