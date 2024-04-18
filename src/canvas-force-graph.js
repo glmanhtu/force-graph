@@ -105,13 +105,13 @@ export default Kapsule({
       state.forceLayout.force(forceName, forceFn); // Force setter
       return this;
     },
+    d3Alpha: function(state) {
+      return state.forceLayout.alpha();
+    },
     d3ReheatSimulation: function(state) {
       state.forceLayout.alpha(1);
       this.resetCountdown();
       return this;
-    },
-    d3Alpha: function(state) {
-      return state.forceLayout.alpha();
     },
     // reset cooldown state
     resetCountdown: function(state) {
