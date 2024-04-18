@@ -62,6 +62,7 @@ const linkedProps = Object.assign(
 );
 const linkedMethods = Object.assign(...[
   'd3Force',
+  'd3Alpha',
   'd3ReheatSimulation',
   'emitParticle'
 ].map(p => ({ [p]: bindFG.linkMethod(p)})));

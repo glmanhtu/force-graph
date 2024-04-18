@@ -142,6 +142,7 @@ export interface ForceGraphGenericInstance<ChainableInstance> {
   onDagError(): (loopNodeIds: (string | number)[]) => void;
   onDagError(errorHandleFn: (loopNodeIds: (string | number)[]) => void): ChainableInstance;
   d3AlphaMin(): number;
+  d3Alpha(): number;
   d3AlphaMin(alphaMin: number): ChainableInstance;
   d3AlphaDecay(): number;
   d3AlphaDecay(alphaDecay: number): ChainableInstance;
