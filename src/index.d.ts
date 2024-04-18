@@ -149,7 +149,7 @@ export interface ForceGraphGenericInstance<ChainableInstance> {
   d3VelocityDecay(velocityDecay: number): ChainableInstance;
   d3Force(forceName: 'link' | 'charge' | 'center' | string): ForceFn | undefined;
   d3Force(forceName: 'link' | 'charge' | 'center' | string, forceFn: ForceFn | null): ChainableInstance;
-  d3GetAlpha(): number;
+  d3Alpha(): number;
   d3ReheatSimulation(): ChainableInstance;
   warmupTicks(): number;
   warmupTicks(ticks: number): ChainableInstance;
