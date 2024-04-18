@@ -105,6 +105,9 @@ export default Kapsule({
       state.forceLayout.force(forceName, forceFn); // Force setter
       return this;
     },
+    d3GetAlpha: function(state) {
+      return state.forceLayout.alpha();
+    },
     d3ReheatSimulation: function(state) {
       state.forceLayout.alpha(1);
       this.resetCountdown();

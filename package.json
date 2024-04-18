@@ -15,10 +15,6 @@
   "sideEffects": [
     "./src/*.css"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vasturiano/force-graph.git"
-  },
   "homepage": "https://github.com/vasturiano/force-graph",
   "keywords": [
     "2d",
