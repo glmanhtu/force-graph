@@ -62,7 +62,6 @@ const linkedProps = Object.assign(
 );
 const linkedMethods = Object.assign(...[
   'd3Force',
-  'd3Alpha',
   'd3ReheatSimulation',
   'emitParticle'
 ].map(p => ({ [p]: bindFG.linkMethod(p)})));
@@ -191,6 +190,9 @@ export default Kapsule({
   },
 
   methods: {
+    d3Alpha: function(state) {
+      return state.forceGraph.alpha();
+    },
     graph2ScreenCoords: function(state, x, y) {
       const t = d3ZoomTransform(state.canvas);
       return { x: x * t.k  + t.x, y: y * t.k + t.y };
