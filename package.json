@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "2D force-directed graph rendered on HTML5 canvas",
   "type": "module",
-  "unpkg": "dist/force-graph.min.js",
-  "main": "dist/force-graph.mjs",
-  "module": "dist/force-graph.mjs",
+  "unpkg": "dist/force-graph-alpha.min.js",
+  "main": "dist/force-graph-alpha.mjs",
+  "module": "dist/force-graph-alpha.mjs",
   "types": "src/index.d.ts",
   "exports": {
-    "types": "./dist/force-graph.d.ts",
-    "umd": "./dist/force-graph.min.js",
-    "default": "./dist/force-graph.mjs"
+    "types": "./dist/force-graph-alpha.d.ts",
+    "umd": "./dist/force-graph-alpha.min.js",
+    "default": "./dist/force-graph-alpha.mjs"
   },
   "sideEffects": [
     "./src/*.css"
